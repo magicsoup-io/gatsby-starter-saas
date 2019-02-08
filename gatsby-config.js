@@ -71,12 +71,7 @@ module.exports = {
         }`
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        ssr: false
-      },
-    },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

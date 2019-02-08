@@ -22,7 +22,7 @@ const Header = ({ siteTitle, props }) => (
             {siteTitle}
           </Link>
         </Heading>
-        <Status />
+        <Status color='white' linkColor='#d3d2d1' />
       </Flex>
     </Container>
   </Menu>

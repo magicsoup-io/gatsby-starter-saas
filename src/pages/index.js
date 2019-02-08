@@ -4,10 +4,13 @@ import {
   Hero,
   Layout,
   SEO,
+  Status,
 } from '../components'
 
 import { 
-  Container 
+  Container ,
+  Box,
+  Flex,
 } from '@magicsoup.io/stock'
 
 import { Link } from 'gatsby'
@@ -18,9 +21,13 @@ const IndexPage = () => (
     <Container>
       <SEO title='Home' keywords={[`gatsby`, `application`, `react`]} />
         <Hero />
-        <P fontSize={3}>
-          <Link to='/pages/readme'>Go to Readme</Link>
-        </P>
+        <Flex fontSize={3} pt={2} justifyContent='flex-end'>
+          <Link to='/pages/readme'>Go to Readme →</Link>
+        </Flex>
+        <Box pt={6}>
+          <hr/>
+          <Status />
+        </Box>
     </Container>
   </Layout>
 )

@@ -24,7 +24,7 @@ const Hero = () => (
             <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>
               {data.heroJson.displayTitle}
             </Heading>
-            <P>
+            <P fontSize={3}>
               {data.heroJson.subTitle}
             </P>
           </Box>

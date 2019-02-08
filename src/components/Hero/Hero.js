@@ -10,6 +10,7 @@ const Hero = () => (
         heroJson {
           displayTitle
           subTitle
+          github
         }
       }
     `}
@@ -24,9 +25,18 @@ const Hero = () => (
             <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>
               {data.heroJson.displayTitle}
             </Heading>
-            <P fontSize={3}>
+            <P fontSize={3} mb={3}>
               {data.heroJson.subTitle}
             </P>
+            <a 
+              className='github-button' 
+              data-icon='octicon-star'
+              href={data.heroJson.github} 
+              data-size='large' 
+              data-show-count='true' 
+              aria-label={`Star this repo on GitHub`}>
+              Star
+            </a>
           </Box>
         </Flex>
       </Card>

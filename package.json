@@ -58,10 +58,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/magicsoup-io/gatsby-starter-magicsoup"
+    "url": "https://github.com/magicsoup-io/gatsby-starter-saas"
   },
   "bugs": {
-    "url": "https://github.com/magicsoup-io/gatsby-starter-magicsoup/issues"
+    "url": "https://github.com/magicsoup-io/gatsby-starter-saas/issues"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

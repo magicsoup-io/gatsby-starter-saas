@@ -8,6 +8,7 @@ import {
 } from '@magicsoup.io/stock'
 import { 
   P,
+  Footer as StyledFooter,
 } from '../../styled'
 
 const Footer = () => (
@@ -25,7 +26,7 @@ const Footer = () => (
       }
     `}
     render={data => 
-      <Box bg='purple' as='footer'>
+      <StyledFooter>
         <Container pt={5} pb={4} px={3}>
           <Flex flexWrap='wrap' flexDirection='column'>
             {data.generalJson.footer.elements.map((element, index) => (
@@ -50,10 +51,10 @@ const Footer = () => (
               color='white'
               mt={0}
               textAlign='center'
-              >© {new Date().getFullYear()} zauberware technologies</P>
+              >© 2018 - {new Date().getFullYear()} <a href="https://www.zauberware.com" target="_blank">zauberware technologies</a></P>
           </Container>
         </Box>
-      </Box>
+      </StyledFooter>
     }
   />
 )

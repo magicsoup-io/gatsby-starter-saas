@@ -1,6 +1,6 @@
-# gatsby-starter-magicsoup
+# gatsby-starter-saas
 
-The GatsbyJS Starter with our react component library soup. - Just add some water! See [demo](https://gatsby.magicsoup.io)
+The GatsbyJS Starter Saas to build your next Saas product on gatsby! See [demo](https://gatsby-saas.magicsoup.io)
 
 ## Quick start
 
@@ -9,8 +9,8 @@ The GatsbyJS Starter with our react component library soup. - Just add some wate
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
     ```sh
-    gatsby new my-magicsoup-starter https://github.com/magicsoup-io/gatsby-starter-magicsoup
-    npm install 
+    gatsby new my-magicsoup-starter https://github.com/magicsoup-io/gatsby-starter-saas
+    yarn 
     ## Or use yarn as a package manager if you prefer. 
     ```
 
@@ -22,9 +22,10 @@ The GatsbyJS Starter with our react component library soup. - Just add some wate
 
 3.  **`hot-and-spicy`**: This starter will always use the most recent version of [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock).
 
-4. **`ready-to-serve`**: Zero config, ready to serve in production. Choose your favorite gatsby deployment.
+4. **`ready-to-serve`**: Saas with (dummy-)login, private routes, ready to create the next million dollar idea.
 
 ## What's included?
+
 
 We at [zauberware](https://www.zauberware.com/) love to create code fast and easy for   have included [styled-components](https://www.styled-components.com/) and [styled-system](https://github.com/jxnblk/styled-system) in our [magicsoup.io/stock](https://github.com/magicsoup-io/magicsoup-stock).
 

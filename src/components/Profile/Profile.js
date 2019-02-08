@@ -1,6 +1,6 @@
 
 import React, { Fragment } from 'react'
-import { Container, Box, Heading } from '@magicsoup.io/stock'
+import { Container, Box, Heading, Card } from '@magicsoup.io/stock'
 import { getCurrentUser } from '../../services/auth'
 import { P } from '../../styled'
 
@@ -8,11 +8,21 @@ const Profile = () => {
   const { name, email } = getCurrentUser()
 
   return (
-    <Container py={6}>
+    <Container>
       <Heading as='h1' variant='h1'>Welcome back, {name}!</Heading>
-      <Heading as='h2' variant='h2'>User Data:</Heading>
-      <P>User: {name}</P>
-      <P>E-Mail: {email}</P>
+      <Card 
+        variant='grey' 
+        maxWidth={600} 
+        p={5} 
+        mb={5}
+        ml={4}>
+        <Heading as='h2' variant='h3'>User Data:</Heading>
+        <P>
+          User: {name}<br/>
+          E-Mail: {email}
+        </P>
+      </Card>
+      <hr/>
       <P mt={5} fontWeight={700}>Define other private routes under <code>/src/pages/app.js</code></P>
     </Container>
   )

@@ -14,6 +14,7 @@ const App = () => (
       <Router>
         <PrivateRoute path='/app/profile' component={Profile} />
         <Login path='/app/login' />
+        <PrivateRoute path='/app/' component={Profile} />
       </Router>
     </Container>
   </Layout>

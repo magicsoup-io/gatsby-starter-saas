@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Saas boilerplate`,
-    description: `An instant-starter for magicsoup.io with GatsbyJS`,
+    title: `Gatsby Saas starter`,
+    description: `An instant-starter for Saas products with GatsbyJS`,
     author: `@magicsoup.io`,
     image: `src/images/website-preview.jpg`,
-    siteUrl: `https://gatsby.magicsoup.io`,
+    siteUrl: `https://gatsby-saas.magicsoup.io`,
     googleSiteVerification: `[place-google-webmaster-tools-key-here]`,
   },
   plugins: [

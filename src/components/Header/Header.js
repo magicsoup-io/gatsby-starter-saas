@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
 
-import { Heading, Container, Box, Flex } from '@magicsoup.io/stock'
+import { Heading, Container, Box, Flex, Link as MagicLink } from '@magicsoup.io/stock'
 import { Menu } from '../../styled'
 import { isLoggedIn, logout } from '../../services/auth'
 import Status from '../Status';

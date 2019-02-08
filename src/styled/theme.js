@@ -3,7 +3,7 @@ const primary = 'purple'
 const greyLight = '#EFEFEE'
 const greyDark = '#9B9B9B'
 const fontSizes = [
-  12, 16, 18, 22, 26, 30, 42, 50
+  12, 16, 18, 22, 26, 36, 48, 58
 ]
 const space = [
   0, 4, 8, 16, 32, 64, 128, 256

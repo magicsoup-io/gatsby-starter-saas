@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react'
-import { navigate } from 'gatsby'
+import { Redirect } from '@reach/router'
 import Form from '../Form'
-import { handleLogin, isLoggedIn } from '../../services/auth'
+import { handleLogin, isLoggedIn, getCurrentUser } from '../../services/auth'
 import { Container, Box, Heading } from '@magicsoup.io/stock'
 
 class Login extends React.Component {
   state = {
     username: ``,
     password: ``,
+    user: null,
   }
 
   handleUpdate(event) {
@@ -21,22 +22,32 @@ class Login extends React.Component {
     handleLogin(this.state)
   }
 
-  render() {
+  componentDidMount() {
     if (isLoggedIn()) {
-      navigate(`/app/profile`)
+      let user = getCurrentUser()
+      this.setState({ 
+        user: user
+      })
     }
+  }
 
-    return (
-      <Container maxWidth={800}>
-        <Box bg='grey' p={4} pt={5} my={5}>
-          <Heading variant='h1' as='h1'>Log in</Heading>
-          <Form
-            handleUpdate={e => this.handleUpdate(e)}
-            handleSubmit={e => this.handleSubmit(e)}
-          />
-        </Box>
-      </Container>
-    )
+  render() {
+    const { user } = this.state
+    if(user){
+      return <Redirect to='/app/profile' noThrow />
+    }else{
+      return (
+        <Container maxWidth={800}>
+          <Box bg='greyLight' p={4} pt={5} my={5}>
+            <Heading variant='h1' as='h1'>Log in</Heading>
+            <Form
+              handleUpdate={e => this.handleUpdate(e)}
+              handleSubmit={e => this.handleSubmit(e)}
+            />
+          </Box>
+        </Container>
+      )
+    }
   }
 }
 

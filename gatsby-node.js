@@ -23,8 +23,8 @@ exports.createPages = ({ page, graphql, actions }) => {
   ]
   appRoutes.forEach(element => {
     createPage({
-      slug: 'profile',
-      path: `/app/profile`,
+      slug: element,
+      path: `/app/${element}`,
       component: path.resolve(`./src/pages/app.js`),
     })
   });

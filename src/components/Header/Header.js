@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
-import { navigate } from '@reach/router'
 
 import { Heading, Container, Box, Flex } from '@magicsoup.io/stock'
 import { Menu } from '../../styled'

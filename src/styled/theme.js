@@ -13,7 +13,7 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,
-    grey: '#EFEFEE',
+    greyLight: '#EFEFEE',
     greyDark: '#9B9B9B',
   },
   fonts: {

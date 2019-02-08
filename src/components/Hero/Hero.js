@@ -18,7 +18,7 @@ const Hero = () => (
         p={4}
         pt={[6,7]}
         alignItems='center'
-        bg='grey'
+        bg='greyLight'
       >
         <Box>
           <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>

@@ -7,6 +7,6 @@ export { default as Footer } from './Footer'
 
 export { default as Status } from './Status'
 export { default as Form } from './Form'
-export { default as Home } from './Home'
+export { default as Profile } from './Profile'
 export { default as Login } from './Login'
 export { default as PrivateRoute } from './PrivateRoute'

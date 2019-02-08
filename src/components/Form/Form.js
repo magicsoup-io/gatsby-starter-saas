@@ -1,5 +1,7 @@
 import React from "react"
 import { navigate } from "@reach/router"
+import { Button } from '@magicsoup.io/stock'
+import { Input, Label } from '../../styled'
 
 export default ({ handleSubmit, handleUpdate }) => (
   <form
@@ -13,22 +15,27 @@ export default ({ handleSubmit, handleUpdate }) => (
       For this demo, please log in with the username <code>gatsby</code> and the
       password <code>demo</code>.
     </p>
-    <label>
+    <Label>
       Username
-      <input
+      <Input
         type="text"
         name="username"
         onChange={handleUpdate}
       />
-    </label>
-    <label>
+    </Label>
+    <Label>
       Password
-      <input
+      <Input
         type="password"
         name="password"
         onChange={handleUpdate}
       />
-    </label>
-    <input type="submit" value="Log In" />
+    </Label>
+    <Button 
+      as="input" 
+      variant="primary" 
+      type="submit" 
+      value="Log In" 
+      my={3} />
   </form>
 )

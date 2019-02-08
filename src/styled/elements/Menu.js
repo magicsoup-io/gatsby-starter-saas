@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { themeGet } from 'styled-system'
-import { Box } from '@magicsoup.io/stock'
+import { Box, Text } from '@magicsoup.io/stock'
+import { Link as GatsbyLink } from "gatsby"
 
 const Menu = styled(Box)(props => css`
   background-color: ${themeGet('colors.primary', 'purple')};

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MagicSoup.io @ Gatsby`,
+    title: `Gatsby Saas boilerplate`,
     description: `An instant-starter for magicsoup.io with GatsbyJS`,
     author: `@magicsoup.io`,
     image: `src/images/website-preview.jpg`,

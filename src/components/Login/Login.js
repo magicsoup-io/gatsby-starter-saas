@@ -1,7 +1,8 @@
-import React, { Fragment } from "react"
-import { navigate } from "gatsby"
-import Form from "../Form"
-import { handleLogin, isLoggedIn } from "../../services/auth"
+import React, { Fragment } from 'react'
+import { navigate } from 'gatsby'
+import Form from '../Form'
+import { handleLogin, isLoggedIn } from '../../services/auth'
+import { Container, Box, Heading } from '@magicsoup.io/stock'
 
 class Login extends React.Component {
   state = {
@@ -26,13 +27,13 @@ class Login extends React.Component {
     }
 
     return (
-      <Fragment>
-        <h1>Log in</h1>
+      <Container py={6} maxWidth={600}>
+        <Heading variant="h1" as="h1">Log in</Heading>
         <Form
           handleUpdate={e => this.handleUpdate(e)}
           handleSubmit={e => this.handleSubmit(e)}
         />
-      </Fragment>
+      </Container>
     )
   }
 }

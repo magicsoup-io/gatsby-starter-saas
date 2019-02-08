@@ -17,18 +17,19 @@ exports.createPages = ({ page, graphql, actions }) => {
   const { createPage } = actions
   // const defaultPage = path.resolve(`src/templates/default-page.js`)
 
-  createPage({
-    slug: 'profile',
-    path: `/app/profile`,
-    component: path.resolve(`./src/pages/app.js`),
-    context: {
-      // Data passed to context is available
-      // in page queries as GraphQL variables.
+  // dynamic routes
+  const appRoutes = [
+    'profile'
+  ]
+  appRoutes.forEach(element => {
+    createPage({
       slug: 'profile',
-      context: {}, // additional data can be passed via context
-    },
-  })
+      path: `/app/profile`,
+      component: path.resolve(`./src/pages/app.js`),
+    })
+  });
 
+  // Create static login page
   createPage({
     slug: 'login',
     path: `/app/login`,
@@ -40,18 +41,6 @@ exports.createPages = ({ page, graphql, actions }) => {
       context: {}, // additional data can be passed via context
     },
   })
-
-  // createPage({
-  //   slug: 'profile',
-  //   path: `/app/profile`,
-  //   component: path.resolve(`./src/pages/app.js`),
-  //   context: {
-  //     // Data passed to context is available
-  //     // in page queries as GraphQL variables.
-  //     slug: 'profile',
-  //     context: {}, // additional data can be passed via context
-  //   },
-  // })
 
   return graphql(`
     {

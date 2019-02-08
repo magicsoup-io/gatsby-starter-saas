@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-magicsoup",
+  "name": "gatsby-starter-saas",
   "description": "An instant-starter for Saas products. Faked backend, so bring your own.",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "author": "@magicsoup.io",
   "contributors": [
     {

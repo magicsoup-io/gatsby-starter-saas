@@ -15,7 +15,7 @@ import { P } from '../styled'
 
 const IndexPage = () => (
   <Layout>
-    <Container p={[7]}>
+    <Container p={[5]}>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <Hero />
         <P fontSize={3}>

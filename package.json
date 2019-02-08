@@ -1,0 +1,73 @@
+{
+  "name": "gatsby-starter-magicsoup",
+  "description": "An instant-starter for Saas products. Faked backend, so bring your own.",
+  "version": "0.1.2",
+  "author": "@magicsoup.io",
+  "contributors": [
+    {
+      "name": "Philipp Siegmund",
+      "email": "philipp@zauerware.com"
+    },
+    {
+      "name": "Simon Franzen",
+      "email": "simon@zauerware.com"
+    }
+  ],
+  "dependencies": {
+    "@magicsoup.io/stock": "^0.0.13",
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.0.112",
+    "gatsby-image": "^2.0.29",
+    "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-offline": "^2.0.22",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-plugin-sitemap": "^2.0.5",
+    "gatsby-plugin-styled-components": "^3.0.5",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-json": "^2.1.8",
+    "gatsby-transformer-remark": "^2.2.4",
+    "gatsby-transformer-sharp": "^2.1.13",
+    "marksy": "^6.1.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-i18next": "^10.0.0",
+    "styled-components": "^4.1.3",
+    "styled-normalize": "^8.0.6",
+    "styled-system": "^3.2.1"
+  },
+  "keywords": [
+    "magicsoup.io",
+    "magicsoup",
+    "styled-components",
+    "styled-system",
+    "gatsby",
+    "starter",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magicsoup-io/gatsby-starter-magicsoup"
+  },
+  "bugs": {
+    "url": "https://github.com/magicsoup-io/gatsby-starter-magicsoup/issues"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.1.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
+    "react-test-renderer": "^16.8.0"
+  }
+}

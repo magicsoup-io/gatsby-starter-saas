@@ -1,0 +1,10 @@
+{
+  "footer":{
+    "elements": [
+      {
+        "headline": "About",
+        "text": "Made with GatsbyJS and magicsoup.io"
+      }
+    ]
+  } 
+}

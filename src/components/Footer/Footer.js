@@ -1,5 +1,5 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby'
 import { 
   Box,
   Flex,
@@ -25,7 +25,7 @@ const Footer = () => (
       }
     `}
     render={data => 
-      <Box bg="purple" as="footer">
+      <Box bg='purple' as='footer'>
         <Container pt={5} pb={4} px={3}>
           <Flex flexWrap='wrap' flexDirection='column'>
             {data.generalJson.footer.elements.map((element, index) => (
@@ -35,21 +35,21 @@ const Footer = () => (
                 pt={4}
                 pb={3}
                 width={[1]}>
-                <Heading as="h4" variant="h4" color="white">{element.headline}</Heading>
-                <P color="white" dangerouslySetInnerHTML={{__html: element.text }} />
+                <Heading as='h4' variant='h4' color='white'>{element.headline}</Heading>
+                <P color='white' dangerouslySetInnerHTML={{__html: element.text }} />
               </Box>
             ))}
           </Flex>
         </Container>
         <Box 
-          bg="purple"
+          bg='purple'
           >
           <Container py={3}>
             <P 
               fontSize={1}
-              color="white"
+              color='white'
               mt={0}
-              textAlign="center"
+              textAlign='center'
               >© {new Date().getFullYear()} zauberware technologies</P>
           </Container>
         </Box>

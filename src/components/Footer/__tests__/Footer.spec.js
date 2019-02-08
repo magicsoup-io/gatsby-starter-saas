@@ -1,7 +1,7 @@
-import React from "react"
-import renderer from "react-test-renderer"
+import React from 'react'
+import renderer from 'react-test-renderer'
 import { StaticQuery } from 'gatsby'
-import Footer from "../Footer"
+import Footer from '../Footer'
 
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) =>
@@ -24,8 +24,8 @@ beforeEach(() => {
   )
 })
 
-describe("Footer", () => {
-  it("renders correctly", () => {
+describe('Footer', () => {
+  it('renders correctly', () => {
     const tree = renderer.create(<Footer />).toJSON()
     expect(tree).toMatchSnapshot()
   })

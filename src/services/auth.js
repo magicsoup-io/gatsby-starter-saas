@@ -1,12 +1,12 @@
-export const isBrowser = () => typeof window !== "undefined"
+export const isBrowser = () => typeof window !== 'undefined'
 
 export const getCurrentUser = () =>
-  isBrowser() && window.localStorage.getItem("gatsbyUser")
-    ? JSON.parse(window.localStorage.getItem("gatsbyUser"))
+  isBrowser() && window.localStorage.getItem('gatsbyUser')
+    ? JSON.parse(window.localStorage.getItem('gatsbyUser'))
     : {}
 
 const setUser = user =>
-  window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
+  window.localStorage.setItem('gatsbyUser', JSON.stringify(user))
 
 export const handleLogin = ({ username, password }) => {
   if (username === `gatsby` && password === `demo`) {

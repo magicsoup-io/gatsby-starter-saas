@@ -94,7 +94,7 @@ export default ({ data }) => {
         keywords={
           [`gatsby`, `application`, `react`]
         } />
-      <Container py={[6]}>
+      <Container>
         {compiled.tree}
       </Container>
     </Layout>

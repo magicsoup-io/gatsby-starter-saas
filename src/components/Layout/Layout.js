@@ -1,8 +1,9 @@
-import React, { Fragment } from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Header from "../Header"
-import Footer from "../Footer"
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import Header from '../Header'
+import Footer from '../Footer'
+import { Box } from '@magicsoup.io/stock'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,7 +19,11 @@ const Layout = ({ children }) => (
     render={data => (
       <Fragment>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <Box 
+          as='main' 
+          py={6}>
+          {children}
+        </Box>
         <Footer />
       </Fragment>
     )}

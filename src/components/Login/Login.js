@@ -27,12 +27,14 @@ class Login extends React.Component {
     }
 
     return (
-      <Container py={6} maxWidth={600}>
-        <Heading variant="h1" as="h1">Log in</Heading>
-        <Form
-          handleUpdate={e => this.handleUpdate(e)}
-          handleSubmit={e => this.handleSubmit(e)}
-        />
+      <Container maxWidth={800}>
+        <Box bg='grey' p={4} pt={5} my={5}>
+          <Heading variant='h1' as='h1'>Log in</Heading>
+          <Form
+            handleUpdate={e => this.handleUpdate(e)}
+            handleSubmit={e => this.handleSubmit(e)}
+          />
+        </Box>
       </Container>
     )
   }

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 import {
   Hero,
@@ -15,11 +15,11 @@ import { P } from '../styled'
 
 const IndexPage = () => (
   <Layout>
-    <Container p={[5]}>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Container>
+      <SEO title='Home' keywords={[`gatsby`, `application`, `react`]} />
         <Hero />
         <P fontSize={3}>
-          <Link to="/pages/readme">Go to Readme</Link>
+          <Link to='/pages/readme'>Go to Readme</Link>
         </P>
     </Container>
   </Layout>

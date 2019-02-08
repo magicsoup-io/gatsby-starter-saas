@@ -1,7 +1,5 @@
 
 const primary = 'purple'
-const primaryLight = '#534141'
-const primaryLighter = '#685353'
 const fontSizes = [
   12, 16, 18, 22, 26, 30, 42, 50
 ]
@@ -15,6 +13,8 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,
+    grey: '#EFEFEE',
+    greyDark: '#9B9B9B',
   },
   fonts: {
     sans: '"Overpass", system-ui, sans-serif'
@@ -32,7 +32,6 @@ export default {
       backgroundColor: primary,
       '&:hover': {
         color: '#fff',
-        backgroundColor: primaryLight
       }
     },
     white: {
@@ -49,7 +48,7 @@ export default {
   headings: {
     h1: {
       fontSize: fontSizes[6],
-      fontWeight: 700,
+      fontWeight: 400,
     },
     h2: {
       fontSize: fontSizes[5],

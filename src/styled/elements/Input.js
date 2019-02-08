@@ -8,9 +8,9 @@ const Input = styled(Box)`
 
 Input.defaultProps = {
   as: 'input',
-  fontSize: 2,
+  fontSize: 3,
   my: 2,
-  p: 2,
+  p: 3,
 }
 
 export default Input

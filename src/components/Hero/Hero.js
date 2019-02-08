@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Heading, Text } from '@magicsoup.io/stock'
+import { P } from '../../styled'
 
 const Hero = () => (
   <StaticQuery
@@ -14,16 +15,18 @@ const Hero = () => (
     `}
     render={data => (
       <Flex
-        pt={6}
-        alignItems="center"
+        p={4}
+        pt={[6,7]}
+        alignItems='center'
+        bg='grey'
       >
         <Box>
-          <Heading as="h1" variant="h1">
+          <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>
             {data.heroJson.displayTitle}
           </Heading>
-          <Text>
+          <P>
             {data.heroJson.subTitle}
-          </Text>
+          </P>
         </Box>
       </Flex>
     )}

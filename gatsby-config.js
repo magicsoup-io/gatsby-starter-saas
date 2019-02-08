@@ -9,7 +9,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -70,6 +69,12 @@ module.exports = {
               }
             }
         }`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        ssr: false
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

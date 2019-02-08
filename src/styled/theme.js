@@ -1,5 +1,7 @@
 
 const primary = 'purple'
+const greyLight = '#EFEFEE'
+const greyDark = '#9B9B9B'
 const fontSizes = [
   12, 16, 18, 22, 26, 30, 42, 50
 ]
@@ -13,8 +15,8 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,
-    greyLight: '#EFEFEE',
-    greyDark: '#9B9B9B',
+    greyLight: greyLight,
+    greyDark: greyDark,
   },
   fonts: {
     sans: '"Overpass", system-ui, sans-serif'
@@ -43,6 +45,11 @@ export default {
         color: primary,
         backgroundColor: '#fff'
       }
+    }
+  },
+  cards: {
+    grey: {
+      backgroundColor: greyLight,
     }
   },
   headings: {

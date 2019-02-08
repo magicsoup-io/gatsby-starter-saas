@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Redirect } from '@reach/router'
 import Form from '../Form'
 import { handleLogin, isLoggedIn, getCurrentUser } from '../../services/auth'
-import { Container, Box, Heading } from '@magicsoup.io/stock'
+import { Container, Card, Heading } from '@magicsoup.io/stock'
 
 class Login extends React.Component {
   state = {
@@ -38,13 +38,13 @@ class Login extends React.Component {
     }else{
       return (
         <Container maxWidth={800}>
-          <Box bg='greyLight' p={4} pt={5} my={5}>
+          <Card variant='grey' p={4} pt={5} my={5}>
             <Heading variant='h1' as='h1'>Log in</Heading>
             <Form
               handleUpdate={e => this.handleUpdate(e)}
               handleSubmit={e => this.handleSubmit(e)}
             />
-          </Box>
+          </Card>
         </Container>
       )
     }

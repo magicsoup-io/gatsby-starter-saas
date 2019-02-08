@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@magicsoup.io/stock'
-import { Input, Label } from '../../styled'
+import { Input, Label, P } from '../../styled'
 
 import { navigate } from '@reach/router'
 
@@ -14,10 +14,10 @@ export default ({ handleSubmit, handleUpdate }) => {
         navigate(`/app/profile`)
       }}
     >
-      <p >
+      <P>
         For this demo, please log in with the username <strong>gatsby</strong> and the
         password <strong>demo</strong>.
-      </p>
+      </P>
       <Label>
         Username
         <Input

@@ -17,7 +17,7 @@ exports.createPages = ({ page, graphql, actions }) => {
   const { createPage } = actions
   // const defaultPage = path.resolve(`src/templates/default-page.js`)
 
-  // dynamic routes
+  // dynamic routes under /app/*
   const appRoutes = [
     'profile'
   ]

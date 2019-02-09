@@ -5,6 +5,7 @@ import {
   Layout,
   SEO,
   Status,
+  Plans,
 } from '../components'
 
 import { 
@@ -24,10 +25,11 @@ const IndexPage = () => (
         <Flex fontSize={3} pt={2} justifyContent='flex-end'>
           <Link to='/pages/readme'>Go to Readme →</Link>
         </Flex>
-        <Box pt={6}>
+        <Box py={6}>
           <hr/>
           <Status />
         </Box>
+        <Plans />
     </Container>
   </Layout>
 )

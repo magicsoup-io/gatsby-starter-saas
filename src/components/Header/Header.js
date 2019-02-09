@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
 
 import { Heading, Container, Box, Flex, Link as MagicLink } from '@magicsoup.io/stock'
-import { Menu } from '../../styled'
+import { Menu, P } from '../../styled'
 import { isLoggedIn, logout } from '../../services/auth'
 import Status from '../Status';
 
@@ -22,6 +22,11 @@ const Header = ({ siteTitle, props }) => (
             {siteTitle}
           </Link>
         </Heading>
+        <P color='white' mt={0}>
+          <Link to='/' style={{color: '#d3d2d1', paddingRight: '20px' }}>Home</Link>
+          <Link to='/app/plans' style={{color: '#d3d2d1', paddingRight: '20px' }}>Pricing</Link>
+          <Link to='/app/profile' style={{color: '#d3d2d1', paddingRight: '20px' }}>Profile</Link>
+        </P>
         <Status color='white' linkColor='#d3d2d1' />
       </Flex>
     </Container>

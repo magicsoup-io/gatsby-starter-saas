@@ -11,7 +11,7 @@ const Footer = styled(Box)`
 
 Footer.defaultProps = {
   as: 'footer',
-  bg: 'purple',
+  bg: 'primary',
 }
 
 export default Footer

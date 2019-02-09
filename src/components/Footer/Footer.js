@@ -43,7 +43,7 @@ const Footer = () => (
           </Flex>
         </Container>
         <Box 
-          bg='purple'
+          bg='primary'
           >
           <Container py={3}>
             <P 

@@ -23,6 +23,7 @@ export default ({ handleSubmit, handleUpdate }) => {
         <Input
           type='text'
           name='username'
+          placeholder='Enter username'
           onChange={handleUpdate}
         />
       </Label>
@@ -31,6 +32,7 @@ export default ({ handleSubmit, handleUpdate }) => {
         <Input
           type='password'
           name='password'
+          placeholder='Enter password'
           onChange={handleUpdate}
         />
       </Label>

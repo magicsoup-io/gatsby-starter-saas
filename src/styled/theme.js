@@ -1,7 +1,8 @@
 
-const primary = 'purple'
-const greyLight = '#EFEFEE'
-const greyDark = '#9B9B9B'
+const primary = '#8A2BE2'
+const primaryDark = '#4B0082'
+const greyLight = '#ededf0'
+const greyDark = '#b7b9c4'
 const fontSizes = [
   12, 16, 18, 22, 26, 36, 48, 58
 ]
@@ -15,6 +16,7 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,
+    primaryDark: primaryDark,
     greyLight: greyLight,
     greyDark: greyDark,
   },
@@ -22,11 +24,16 @@ export default {
     sans: '"Overpass", system-ui, sans-serif'
   },
   shadows: {
-    small: '0 0 4px rgba(0, 0, 0, .125)',
-    large: '0 0 24px rgba(0, 0, 0, .125)'
+    small: '0 0 4px rgba(0, 0, 0, .225)',
+    large: '0 0 24px rgba(0, 0, 0, .225)'
   },
   Button: {
-    fontSize: fontSizes[3],
+    cursor: 'pointer',
+    fontSize: fontSizes[2],
+    paddingTop: space[3],
+    paddingBottom: space[3],
+    paddingLeft: space[4],
+    paddingRight: space[4],
   },
   buttons: {
     primary: {
@@ -34,6 +41,7 @@ export default {
       backgroundColor: primary,
       '&:hover': {
         color: '#fff',
+        backgroundColor: primaryDark,
       }
     },
     white: {
@@ -50,6 +58,19 @@ export default {
   cards: {
     grey: {
       backgroundColor: greyLight,
+    },
+    pricing: {
+      border: '3px solid ' + primary,
+      padding: space[4],
+      textAlign: 'center',
+    },
+    primary: {
+      border: '3px solid ' + primary,
+      padding: space[4],
+      textAlign: 'center',
+      backgroundColor: primary,
+      color: 'white',
+      boxShadow: '0 0 24px rgba(0, 0, 0, .125)',
     }
   },
   headings: {

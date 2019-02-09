@@ -22,8 +22,6 @@ const Profile = () => {
           E-Mail: {email}
         </P>
       </Card>
-      <hr/>
-      <P mt={5} fontWeight={700}>Define other private routes under <code>/src/pages/app.js</code></P>
     </Container>
   )
 }

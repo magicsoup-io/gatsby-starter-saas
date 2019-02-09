@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Saas starter`,
     description: `An instant-starter for Saas products with GatsbyJS`,
     author: `@magicsoup.io`,
-    image: `src/images/website-preview.jpg`,
+    image: `website-preview.jpg`,
     siteUrl: `https://gatsby-saas.magicsoup.io`,
     googleSiteVerification: `[place-google-webmaster-tools-key-here]`,
   },

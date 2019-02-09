@@ -2,10 +2,10 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="sc-bdVaJa gQinXj"
+  className="sc-bdVaJa sc-iwsKbI dJKMkL"
 >
   <div
-    className="sc-bdVaJa sc-bxivhb bQeeyr"
+    className="sc-bdVaJa sc-bxivhb fhvOTI"
   >
     <div
       className="sc-bdVaJa sc-ifAKCX kqdpKR"
@@ -25,7 +25,7 @@ exports[`Footer renders correctly 1`] = `
           Home
         </h4>
         <p
-          className="sc-bdVaJa sc-EHOje sc-gZMcBi dBZTyz"
+          className="sc-bdVaJa sc-EHOje sc-gqjmRU sFrRH"
           color="white"
           dangerouslySetInnerHTML={
             Object {
@@ -50,7 +50,7 @@ exports[`Footer renders correctly 1`] = `
           Contact
         </h4>
         <p
-          className="sc-bdVaJa sc-EHOje sc-gZMcBi dBZTyz"
+          className="sc-bdVaJa sc-EHOje sc-gqjmRU sFrRH"
           color="white"
           dangerouslySetInnerHTML={
             Object {
@@ -63,19 +63,25 @@ exports[`Footer renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-bdVaJa gQinXj"
+    className="sc-bdVaJa gzJBxY"
   >
     <div
-      className="sc-bdVaJa sc-bxivhb eNWZMm"
+      className="sc-bdVaJa sc-bxivhb gbgRUr"
     >
       <p
-        className="sc-bdVaJa sc-EHOje sc-gZMcBi ifmwHu"
+        className="sc-bdVaJa sc-EHOje sc-gqjmRU ivXjAx"
         color="white"
         fontSize={1}
       >
-        © 
+        © 2018 - 
         2019
-         zauberware technologies
+         
+        <a
+          href="https://www.zauberware.com"
+          target="_blank"
+        >
+          zauberware technologies
+        </a>
       </p>
     </div>
   </div>

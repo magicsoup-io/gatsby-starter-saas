@@ -10,6 +10,7 @@ const Menu = styled(Box)(props => css`
   width: 100%;
   display: flex;
   transition: background-color 300ms linear;
+  z-index: 1000;
 `)
 
 Menu.defaultProps = {

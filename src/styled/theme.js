@@ -11,8 +11,8 @@ const space = [
 ]
 
 export default {
-  ...fontSizes,
-  ...space,
+  fontSizes,
+  space,
   breakpoints: ['40em', '52em', '64em'],
   colors: {
     primary: primary,

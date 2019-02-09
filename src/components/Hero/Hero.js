@@ -22,7 +22,7 @@ const Hero = () => (
           alignItems='center'
         >
           <Box>
-            <Heading as='h1' variant='h1' fontSize={[6,7,8]} m={0}>
+            <Heading as='h1' variant='h1' fontSize={[5,6,7]} m={0}>
               {data.heroJson.displayTitle}
             </Heading>
             <P fontSize={3} mb={3}>

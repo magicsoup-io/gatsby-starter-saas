@@ -10,7 +10,10 @@ import Status from '../Status';
 const Header = ({ siteTitle, props }) => (
   <Menu>
     <Container width='100%'>
-      <Flex justifyContent='space-between' alignItems='center'>
+      <Flex 
+        justifyContent='space-between'
+        flexWrap='wrap'
+        alignItems='center'>
         <Heading as='h1' variant='h1' style={{fontSize: 25}}>
           <Link
             to='/'
@@ -27,7 +30,7 @@ const Header = ({ siteTitle, props }) => (
           <Link to='/app/plans' style={{color: '#d3d2d1', paddingRight: '20px' }}>Pricing</Link>
           <Link to='/app/profile' style={{color: '#d3d2d1', paddingRight: '20px' }}>Profile</Link>
         </P>
-        <Status color='white' linkColor='#d3d2d1' />
+        <Box mb={[2,0]}><Status color='white' linkColor='#d3d2d1' /></Box>
       </Flex>
     </Container>
   </Menu>

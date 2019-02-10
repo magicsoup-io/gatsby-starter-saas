@@ -70,7 +70,7 @@ const compile = marksy({
           <Box 
             width={[1, 3/4, 2/3]} 
             py={5}>
-            <Image {...props} width='100%'/>
+            <Image {...props} maxWidth={'100%'}/>
           </Box>
         </Flex>
       )

@@ -5,7 +5,7 @@ date: "2017-08-10"
 ---
 # gatsby-starter-saas
 
-The GatsbyJS Starter to build your next Saas product! Visit [demo](https://gatsby-redux.zauberware.com)
+The GatsbyJS Starter to build your next SaaS product! Visit [demo](https://gatsby-redux.zauberware.com)
 
 ![zauberware technologies](https://github.com/magicsoup-io/gatsby-starter-saas/raw/master/static/website-preview.jpg)
 

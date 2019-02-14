@@ -27,7 +27,7 @@ yarn && npm start
 
 
 ### 1. Authentication:
-Dummy authentication with LocalStorage. **Do not use this in production.** Please implement your prefered authentication method. This starter gives a giid starting point to set everything up.
+Dummy authentication with LocalStorage. **Do not use this in production.** Please implement your prefered authentication method. This starter gives a good starting point to set everything up.
 
 ### 2. Optimized Images
 No more large, unoptimized images which dramatically slow down your site. The starter uses [gatsby-image](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-image) for optimized image loading.
